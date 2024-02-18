@@ -2,7 +2,7 @@
 @import url('../css/utils.css');
 
 :root {
-    --fs-base: 16px;
+    --fs-base: 20px;
     --font-secondary: 'Oswald';
     --primary-rga-code: 0, 26, 79;
     --primary-color: rgb(var(--primary-rga-code));
@@ -115,6 +115,7 @@ html, body {
     font-weight: 500;
     text-align: center;
     font-size: 36px;
+    margin-bottom: 50px;
 }
 
 .regions {
@@ -182,4 +183,27 @@ html, body {
     justify-content: center;
     padding: 50px;
     text-transform: uppercase;
+}
+
+.info-item {
+    font-family: var(--font-secondary);
+    font-size: var(--fs-base);
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+.info-item_inline {
+    display: inline-block;
+    margin-right: 80px;
+}
+.info-item__label {
+    color: #999999;
+    margin-bottom: 3px;
+}   
+.info-item__value {
+    color: #000;
+}
+
+.group-info-items {
+    display: flex;
+    align-items: center;
 }
