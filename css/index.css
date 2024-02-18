@@ -4,9 +4,11 @@
 :root {
     --fs-base: 20px;
     --font-secondary: 'Oswald';
-    --primary-rga-code: 0, 26, 79;
-    --primary-color: rgb(var(--primary-rga-code));
-    --primary-op-color: rgba(var(--primary-rga-code), .8);
+    --primary-rgb-code: 0, 26, 79;
+    --secodary-rgb-code: 0, 139, 179;
+    --primary-color: rgb(var(--primary-rgb-code));
+    --primary-op-color: rgba(var(--primary-rgb-code), .8);
+    --secondary-color: rgb(var(--secodary-rgb-code));
     --gray-color: #C9CBD7;
     --light-gray-color: #F7F7F7;
 }
@@ -53,6 +55,10 @@ html, body {
     font-family: var(--font-secondary);
     font-weight: 300;
     font-size: 19px;
+    cursor: pointer;
+}
+.menu__link:hover {
+    color: var(--secondary-color);
 }
 
 .start-section {
