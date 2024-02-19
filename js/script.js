@@ -10,7 +10,7 @@ dataItemTitles.forEach(item => {
     });
 });
 
-const payItemTitles = document.querySelectorAll('.pay-item__title');
+const payItemTitles = document.querySelectorAll('.pay-item__header');
 payItemTitles.forEach(item => {
     item?.addEventListener('click', () => {
         const block = item.closest('.pay-item');

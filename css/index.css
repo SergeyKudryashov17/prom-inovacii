@@ -155,7 +155,7 @@ main {
 
 
 .default-page {
-    padding-top: 101px;
+    padding-top: 97px;
 }
 
 .page-top-block {
@@ -192,7 +192,7 @@ main {
 }
 .footer__copyright {
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 300;
     font-family: var(--font-secondary);
     text-align: center;
     color: #fff;
@@ -257,7 +257,7 @@ main {
     padding: 0;
 }
 .data-item__file {
-
+    font-weight: 300;
 }
 .data-item_open .data-item__collapse-icon {
     transform: rotate(90deg);
@@ -269,14 +269,17 @@ main {
     background: #F7F7F7;
     padding: 35px 50px;
 }
-.pay-item__title {
+.pay-item__header {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
-    position: relative;
+}
+.pay-item__title {
     color: var(--primary-color);
     font-weight: 500;
     font-size: 25px;
+    line-height: 1.3;
+    margin-right: 15px;
 }
 .pay-item__collapse {
     margin-top: 25px;
