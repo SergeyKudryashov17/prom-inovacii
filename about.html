@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="./src/libs/bootstrap/css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="./src/libs/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./src/libs/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
@@ -82,11 +83,13 @@
         <section class="page-section page-section__gray">
             <div class="container">
                 <h2 class="headline">Раскрытие информации</h2>
-                <div class="alert-develop">Раздел находится в разработке</div>
                 <div class="data-items-list">
                     <div class="data-item">
-                        <div class="data-item__title">РАБОТАЕТЕ ЛИ ВЫ ПО 249 ФЗ?</div>
-                        <div class="data-item__collapse">
+                        <div class="data-item__title" data-bs-toggle="collapse" href="#collapseDataItem1">
+                            <img class="data-item__collapse-icon" src="./src/img/icons/collapse-icon.svg" alt="">
+                            РАБОТАЕТЕ ЛИ ВЫ ПО 249 ФЗ?
+                        </div>
+                        <div class="data-item__collapse collapse" id="collapseDataItem1">
                             <div class="data-item__desc">Lorem Ipsum - это текст-"рыба", часто используемый в печати и 
                                 вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала 
                                 XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и 
@@ -103,11 +106,13 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="data-item__collapse-icon"></div>
                     </div>
                     <div class="data-item">
-                        <div class="data-item__title">РАБОТАЕТЕ ЛИ ВЫ ПО 249 ФЗ?</div>
-                        <div class="data-item__collapse">
+                        <div class="data-item__title" data-bs-toggle="collapse" href="#collapseDataItem2">
+                            <img class="data-item__collapse-icon" src="./src/img/icons/collapse-icon.svg" alt="">
+                            РАБОТАЕТЕ ЛИ ВЫ ПО 249 ФЗ?
+                        </div>
+                        <div class="data-item__collapse collapse" id="collapseDataItem2">
                             <div class="data-item__desc">Lorem Ipsum - это текст-"рыба", часто используемый в печати и 
                                 вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала 
                                 XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и 
@@ -124,7 +129,6 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="data-item__collapse-icon"></div>
                     </div>
                 </div>
             </div>
@@ -132,15 +136,19 @@
         <section class="page-section">
             <div class="container">
                 <h2 class="headline">Закупки</h2>
-                <div class="alert-develop">Раздел находится в разработке</div>
                 <div class="pay-items-list">
                     <div class="pay-item">
-                        <div class="pay-item__title">Запрос предложений в электронной форме (только смсп)</div>
-                        <div class="pay-item__collapse">
+                        <div class="pay-item__title" data-bs-toggle="collapse" href="#collapsePayItem1">
+                            Запрос предложений в электронной форме (только смсп)
+                            <img class="pay-item__collapse-icon" src="./src/img/icons/collapse-icon.svg" alt="">
+                        </div>
+                        <div class="pay-item__collapse collapse" id="collapsePayItem1">
                             <div class="pay-item__subject">
                                 <div class="pay-item__label">Предмет закупки:</div>
-                                <div class="pay-item__desc">Поставка оригинальных расходных материалов для принтеров и 
-                                    копировальной техники для нужд ОАО "ЛЭСК" и ООО "НОВИТЭН"</div>
+                                <div class="pay-item__desc">
+                                    Поставка оригинальных расходных материалов для принтеров и 
+                                    копировальной техники для нужд ОАО "ЛЭСК" и ООО "НОВИТЭН"
+                                </div>
                             </div>
                             <ul class="pay-item__files">
                                 <li class="pay-item__file">
@@ -154,7 +162,6 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="pay-item__collapse-icon"></div>
                     </div>
                 </div>
             </div>
@@ -163,5 +170,8 @@
     <footer class="footer">
         <div class="footer__copyright">Промышленные инновации, 2024</div>
     </footer>
+
+    <script src="./src/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
