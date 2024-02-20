@@ -242,6 +242,9 @@ main {
     font-weight: 500;
     font-family: var(--font-secondary);
 }
+.data-item__collapse {
+    padding-left: 23px;
+}
 .data-item__collapse-icon {
     transition: transform .3s;
     margin-right: 10px;
@@ -331,4 +334,55 @@ main {
 }
 .contact-item__value {
     text-align: center;
+}
+
+.mobile-menu-icon {
+    display: none;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 27px;
+}
+
+.mobile-menu {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0, .6);
+    opacity: 0;
+    transition: opacity 1s;
+}
+.mobile-menu_open {
+    display: block;
+    opacity: 1;
+}
+.mobile-menu__container {
+    position: relative;
+    width: 65%;
+    height: 100vh;
+    background: var(--primary-color);
+    margin-left: 35%;
+    padding-top: 50px;
+}
+.mobile-menu__btn-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #fff;
+    background: transparent;
+    border: none;
+    font-size: 25px;
+}
+.mobile-menu__item { 
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+.mobile-menu__link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
 }

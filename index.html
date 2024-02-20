@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="./src/libs/bootstrap/css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="./src/libs/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./src/fonts/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/media.css">
 </head>
@@ -17,7 +18,7 @@
                 <a href="./index.html">
                     <img class="company-logo" src="./src/img/logo.svg" alt="Логоип промышленные инновации">
                 </a>
-                <nav>
+                <nav class="header__menu">
                     <ul class="menu">
                         <li class="menu__item">
                             <a class="menu__link" href="./index.html">Главная</a>
@@ -30,9 +31,32 @@
                         </li>
                     </ul>
                 </nav>
+                <button class="mobile-menu-icon">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
             </div>
         </div>
     </header>
+    <div class="mobile-menu">
+        <div class="mobile-menu__container">
+            <button class="mobile-menu__btn-close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </button>
+            <nav>
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item">
+                        <a class="mobile-menu__link" href="/">Главная</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a class="mobile-menu__link" href="/about.html">О компании</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a class="mobile-menu__link" href="/contacts.html">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
     <main class="main-page">
         <section class="start-section">
             <div class="container h-100">
