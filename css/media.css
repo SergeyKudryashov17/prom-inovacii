@@ -169,7 +169,11 @@
     }
 
     .contact-item__logo {
-        width: 33px;
+        width: 40px;
+    }
+
+    .contacts-map {
+        height: 300px;
     }
 
     .headline {
@@ -252,7 +256,7 @@
         margin-bottom: 25px;
     }
     .info-item_inline {
-        margin-right: 50px;
+        margin-right: 40px;
     }
 
     .data-item {
@@ -279,6 +283,10 @@
     }
     .contact-item__logo {
         width: 35px;
+    }
+
+    .contacts-map {
+        height: 240px;
     }
 
     .headline {

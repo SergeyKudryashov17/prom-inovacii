@@ -321,21 +321,27 @@ main {
 /* contact-item */
 .contact-item {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    margin-bottom: 45px;
+}
+.contact-item__logo-wrp {
+    flex-shrink: 0;
+    width: 50px;
+    text-align: center;
+    margin-right: 25px;
 }
 .contact-item__logo {
     margin-bottom: 10px;
 }
+.contact-item__data-wrp {
+    text-align: left;
+}
 .contact-item__label {
     color: #999999;
-    text-align: center;
     text-transform: uppercase;
-    margin-bottom: 15px;
 }
-.contact-item__value {
-    text-align: center;
+
+.contacts-map {
+    height: 400px;
 }
 
 .mobile-menu-icon {
