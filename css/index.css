@@ -7,10 +7,10 @@
     --font-base: 'Open Sans';
     --font-secondary: 'Oswald';
     --primary-rgb-code: 0, 26, 79;
-    --secodary-rgb-code: 0, 139, 179;
+    --secondary-rgb-code: 0, 139, 179;
     --primary-color: rgb(var(--primary-rgb-code));
-    --primary-op-color: rgba(var(--primary-rgb-code), .8);
-    --secondary-color: rgb(var(--secodary-rgb-code));
+    --primary-op-color: rgba(var(--primary-rgb-code), .6);
+    --secondary-color: rgb(var(--secondary-rgb-code));
     --gray-color: #C9CBD7;
     --light-gray-color: #F7F7F7;
 }
@@ -38,9 +38,11 @@ main {
     left: 0;
     width: 100vw;
     z-index: 3;
+    background: #fff;
+    border-bottom: 4px solid var(--secondary-color);
 }
 .header_default {
-    background: var(--primary-color);
+    /* background: var(--primary-color); */
 }
 .header__wrapper {
     display: flex;
@@ -65,7 +67,7 @@ main {
 .menu__link {
     text-transform: uppercase;
     text-decoration: none;
-    color: #fff;
+    color: var(--secondary-color);
     font-family: var(--font-secondary);
     font-weight: 300;
     font-size: 19px;
@@ -119,7 +121,8 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--primary-op-color);
+    /* background: var(--primary-op-color); */
+    background: rgba(var(--secondary-rgb-code), .7);
 }
 
 .page-section {
@@ -182,13 +185,15 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--primary-op-color);
+    /* background: var(--primary-op-color); */
+    background: rgba(var(--secondary-rgb-code), .5);
 }
 
 .footer {
     flex: 0 0 auto;
-    background: var(--primary-color);
-    padding: 35px 0;
+    /* background: var(--primary-color); */
+    background: var(--secondary-color);
+    padding: 20px 0;
 }
 .footer__copyright {
     font-size: 18px;
@@ -287,9 +292,6 @@ main {
 .pay-item__collapse {
     margin-top: 25px;
 }
-.pay-item__subject {
-
-}
 .pay-item__label {
     font-weight: 200;
     color: #000;
@@ -340,7 +342,7 @@ main {
     display: none;
     background: transparent;
     border: none;
-    color: #fff;
+    color: var(--secondary-color);
     font-size: 27px;
 }
 
@@ -364,9 +366,9 @@ main {
     position: relative;
     width: 65%;
     height: 100vh;
-    background: var(--primary-color);
+    background: var(--secondary-color);
     margin-left: 35%;
-    padding-top: 50px;
+    padding-top: 70px;
 }
 .mobile-menu__btn-close {
     position: absolute;
@@ -379,10 +381,11 @@ main {
 }
 .mobile-menu__item { 
     list-style-type: none;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 .mobile-menu__link {
     text-transform: uppercase;
     text-decoration: none;
     color: #fff;
+    font-size: 20px;
 }
